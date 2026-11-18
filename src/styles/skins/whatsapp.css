@@ -1,0 +1,161 @@
+/* WhatsApp (modo claro). Android y iPhone comparten colores de burbujas; cambian barras y tipografía.
+   Ajuste de accesibilidad: el verde de las insignias se oscurece (#128C4A) para que el número blanco se lea (≥ 4,5:1). */
+
+.app-skin[data-app='whatsapp'] {
+  --skin-accent: #128c4a;
+  --skin-badge: #128c4a;
+  --skin-ink: #111b21;
+  --skin-muted: #54656f;
+  --skin-icon: #54656f;
+  --skin-bar: #fff;
+  --skin-chip: #f0f2f5;
+  --skin-chip-on: #d8fdd2;
+  --skin-chip-on-ink: #0a3d20;
+  --skin-line: #e9edef;
+  --bubble-radius: 12px;
+  --bubble-them: #fff;
+  --bubble-them-ink: #111b21;
+  --bubble-me: #d9fdd3;
+  --bubble-me-ink: #111b21;
+  --bubble-shadow: 0 1px 0.5px rgb(11 20 26 / 0.13);
+  --time-ink: #5f6f78;
+  --link: #02648f;
+  --chip-bg: #fff;
+  --chip-ink: #54656f;
+  --card-bg: #fff;
+}
+
+.app-skin[data-app='whatsapp'] .thread {
+  background-color: #efeae2;
+  background-image:
+    radial-gradient(rgb(84 101 111 / 0.09) 1.2px, transparent 1.3px),
+    radial-gradient(rgb(84 101 111 / 0.07) 1px, transparent 1.1px);
+  background-position:
+    0 0,
+    11px 17px;
+  background-size:
+    22px 22px,
+    34px 34px;
+}
+
+.app-skin[data-app='whatsapp'] .msg__bubble {
+  padding: 0.4rem 0.65rem 0.3rem 0.75rem;
+}
+
+.app-skin[data-app='whatsapp'] .msg--them.is-first .msg__bubble {
+  border-top-left-radius: 3px;
+}
+
+.app-skin[data-app='whatsapp'] .msg--me.is-first .msg__bubble {
+  border-top-right-radius: 3px;
+}
+
+.app-skin[data-app='whatsapp'] .msg--me .msg__time .ico {
+  color: #027eb5;
+}
+
+/* Android */
+.app-skin[data-app='whatsapp'][data-os='android'] .lbar__title--brand {
+  color: #128c4a;
+  font-size: 1.6rem;
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .cbar {
+  border-bottom: 0;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .composer {
+  background: #efeae2;
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .composer__field {
+  min-height: 48px;
+  border-radius: 24px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 0.1);
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .ltab .ico {
+  padding: 2px 14px;
+  box-sizing: content-box;
+  border-radius: 16px;
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .ltab.is-on .ico {
+  background: #d8fdd2;
+  color: #0a3d20;
+}
+
+/* iPhone */
+.app-skin[data-app='whatsapp'][data-os='ios'] {
+  --skin-icon: #1c1c1e;
+  --skin-back: #1c1c1e;
+  --skin-muted: #5b6770;
+}
+
+.app-skin[data-app='whatsapp'][data-os='ios'] .cbar,
+.app-skin[data-app='whatsapp'][data-os='ios'] .composer,
+.app-skin[data-app='whatsapp'][data-os='ios'] .ltabs {
+  background: #f6f5f3;
+}
+
+.app-skin[data-app='whatsapp'][data-os='ios'] .cbar {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.app-skin[data-app='whatsapp'][data-os='ios'] .composer__field {
+  border-color: #d1d1d6;
+  border-radius: 18px;
+  min-height: 40px;
+}
+
+.app-skin[data-app='whatsapp'][data-os='ios'] .lsearch {
+  border-radius: 12px;
+}
+
+.app-skin[data-app='whatsapp'][data-os='ios'] .row {
+  border-bottom: 1px solid #ececec;
+}
+
+/* ---------- Android (referencia 3): lista de chats ---------- */
+.app-skin[data-app='whatsapp'][data-os='android'] .lbar__icons .avatar {
+  margin-left: 0.15rem;
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .lchips {
+  padding-top: 0.25rem;
+}
+
+.app-skin[data-app='whatsapp'][data-os='android'] .lchip {
+  border-radius: 18px;
+}
+
+.larchived {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.6rem 1.25rem;
+  color: var(--skin-ink);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.larchived .ico {
+  color: var(--skin-muted);
+}
+
+.lnote {
+  display: block;
+  padding: 1rem 1.5rem 5.5rem;
+  color: var(--skin-muted);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.lfab--wa {
+  bottom: 5.25rem;
+  padding: 0.9rem;
+  border-radius: 16px;
+  background: var(--skin-accent); /* verde accesible del proyecto (ícono blanco ≥ 4,5:1) */
+  color: #fff;
+}

@@ -1,0 +1,127 @@
+/* Versión sencilla («No estoy seguro»): igual para las tres apps.
+   Sin barras ni íconos decorativos, letra más grande, cada mensaje dice quién lo escribió. */
+
+.app-skin[data-os='simple'] {
+  --skin-ink: var(--ac-ink);
+  --skin-muted: #45474f;
+  --skin-bar: #fff;
+  --skin-chip: #ece8df;
+  --skin-line: #c9c3b6;
+  --skin-icon: #333;
+  --skin-accent: #1d3d8f;
+  --skin-badge: #1d3d8f;
+  --bubble-radius: 14px;
+  --bubble-them: #fff;
+  --bubble-them-ink: var(--ac-ink);
+  --bubble-me: #e3f1e4;
+  --bubble-me-ink: var(--ac-ink);
+  --bubble-shadow: none;
+  --link: #0a4fb3;
+  --simple-app: #1d3d8f;
+}
+
+.app-skin[data-os='simple'][data-app='whatsapp'] {
+  --simple-app: #0b6e4f;
+}
+
+.app-skin[data-os='simple'][data-app='messenger'] {
+  --simple-app: #0b57d0;
+}
+
+.app-skin[data-os='simple'][data-app='sms'] {
+  --simple-app: #3d5a80;
+}
+
+.app-skin[data-os='simple'] .thread {
+  background: #f4f4f2;
+  background-image: none;
+  gap: 0.6rem;
+}
+
+.lbar--simple,
+.cbar--simple {
+  min-height: 64px;
+  border-bottom: 0;
+  background: var(--simple-app);
+  color: #fff;
+}
+
+.lbar--simple .lbar__title {
+  font-size: 1.25rem;
+}
+
+.cbar--simple .cbar__back {
+  color: #fff;
+}
+
+.cbar--simple .cbar__back:hover {
+  background: rgb(255 255 255 / 0.15);
+}
+
+.cbar__app {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cbar--simple .cbar__name {
+  font-size: 1.15rem;
+  white-space: normal;
+}
+
+.app-skin[data-os='simple'] .msg__bubble {
+  padding: 0.65rem 0.9rem;
+  border: 2px solid #c9c3b6;
+}
+
+.app-skin[data-os='simple'] .msg--me .msg__bubble {
+  border-color: #8fbf94;
+}
+
+.app-skin[data-os='simple'] .msg__body {
+  max-width: 90%;
+}
+
+.app-skin[data-os='simple'] .msg__text {
+  font-size: 1.35rem;
+}
+
+.msg__who {
+  margin: 0 0 0.25rem;
+  color: var(--skin-muted);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.composer--simple {
+  justify-content: center;
+  border-top: 2px solid var(--skin-line);
+}
+
+.composer--simple .composer__field {
+  justify-content: center;
+  border: 2px dashed #c9c3b6;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.app-skin[data-os='simple'] .row {
+  border-bottom: 1px solid #e1dcd2;
+}
+
+.app-skin[data-os='simple'] .row__badge {
+  padding: 0 10px;
+  height: auto;
+  min-height: 26px;
+  font-size: 0.9rem;
+}
+
+.app-skin[data-os='simple'] .tcard {
+  border: 2px solid #c9c3b6;
+  box-shadow: none;
+}
+
+.app-skin[data-os='simple'] .row.is-unread {
+  background: #fff8e1;
+}

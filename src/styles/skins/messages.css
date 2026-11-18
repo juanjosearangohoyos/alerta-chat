@@ -1,0 +1,145 @@
+/* SMS: Mensajes de Apple (iPhone) y Google Mensajes (Android). Mismo contenido, distinta apariencia.
+   Ajuste de accesibilidad en iPhone: el verde de los SMS enviados se oscurece (#248A3D) para que el texto blanco se lea. */
+
+/* ---------- iPhone · Mensajes ---------- */
+.app-skin[data-app='sms'][data-os='ios'] {
+  --skin-accent: #007aff;
+  --skin-back: #007aff;
+  --skin-icon: #8e8e93;
+  --skin-badge: #007aff;
+  --skin-ink: #000;
+  --skin-muted: #6e6e73;
+  --skin-bar: #f9f9f9;
+  --skin-chip: #ededf0;
+  --skin-line: #e3e3e8;
+  --skin-wall: #fff;
+  --bubble-radius: 19px;
+  --bubble-them: #e9e9eb;
+  --bubble-them-ink: #000;
+  --bubble-me: #248a3d;
+  --bubble-me-ink: #fff;
+  --link: #0060c7;
+  --field-bg: #fff;
+  --field-line: #c7c7cc;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .lbar {
+  background: #fff;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .lsearch {
+  border-radius: 12px;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .row {
+  padding-left: 0.6rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .row::before {
+  content: '';
+  flex: none;
+  width: 11px;
+  height: 11px;
+  margin-right: -0.35rem;
+  border-radius: 50%;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .row.is-unread::before {
+  background: #007aff;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .row__badge {
+  display: none;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .row.is-unread .row__time {
+  color: var(--skin-muted);
+  font-weight: 400;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .msg--them.is-last .msg__bubble {
+  border-bottom-left-radius: 6px;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .msg--me.is-last .msg__bubble {
+  border-bottom-right-radius: 6px;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .composer {
+  background: #fff;
+}
+
+.app-skin[data-app='sms'][data-os='ios'] .composer__field {
+  min-height: 40px;
+  border-radius: 20px;
+}
+
+/* ---------- Android · Google Mensajes ---------- */
+.app-skin[data-app='sms'][data-os='android'] {
+  --skin-accent: #0b57d0;
+  --skin-back: #1f1f1f;
+  --skin-icon: #444746;
+  --skin-badge: #0b57d0;
+  --skin-ink: #1f1f1f;
+  --skin-muted: #444746;
+  --skin-bar: #fff;
+  --skin-chip: #e9eef6;
+  --skin-line: transparent;
+  --skin-wall: #fff;
+  --bubble-radius: 22px;
+  --bubble-them: #e9eef6;
+  --bubble-them-ink: #1f1f1f;
+  --bubble-me: #d3e3fd;
+  --bubble-me-ink: #041e49;
+  --link: #0b57d0;
+  --field-bg: #e9eef6;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .row.is-unread .row__preview {
+  color: var(--skin-ink);
+  font-weight: 700;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .msg--them:not(.is-first) .msg__bubble {
+  border-top-left-radius: 6px;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .msg--them:not(.is-last) .msg__bubble {
+  border-bottom-left-radius: 6px;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .composer__field {
+  min-height: 48px;
+  border-radius: 24px;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .composer__round {
+  background: #d3e3fd;
+  color: #041e49;
+}
+
+/* ---------- Android · Google Mensajes (referencia 4) ---------- */
+.app-skin[data-app='sms'][data-os='android'] .lbar--center .lbar__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .lbar__me {
+  gap: 1rem;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .lfab--gm {
+  border-radius: 28px;
+  background: #0b57d0;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .cbar {
+  padding-left: 0.25rem;
+}
+
+.app-skin[data-app='sms'][data-os='android'] .msg__avatar {
+  width: 30px;
+}

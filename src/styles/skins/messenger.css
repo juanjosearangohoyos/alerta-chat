@@ -1,0 +1,83 @@
+/* Facebook Messenger (modo claro, como la captura de referencia).
+   Azul de las burbujas propias: #0866FF (texto blanco ≥ 4,5:1). */
+
+.app-skin[data-app='messenger'] {
+  --skin-accent: #0866ff;
+  --skin-back: #0866ff;
+  --skin-icon: #0866ff;
+  --skin-badge: #0866ff;
+  --skin-ink: #050505;
+  --skin-muted: #65676b;
+  --skin-bar: #fff;
+  --skin-chip: #f0f2f5;
+  --skin-line: #e4e6eb;
+  --skin-wall: #fff;
+  --bubble-radius: 20px;
+  --bubble-them: #f0f0f0;
+  --bubble-them-ink: #050505;
+  --bubble-me: #0866ff;
+  --bubble-me-ink: #fff;
+  --link: #0a58ca;
+  --field-bg: #f0f2f5;
+}
+
+.app-skin[data-app='messenger'] .msg--them:not(.is-first) .msg__bubble {
+  border-top-left-radius: 5px;
+}
+
+.app-skin[data-app='messenger'] .msg--them:not(.is-last) .msg__bubble {
+  border-bottom-left-radius: 5px;
+}
+
+.app-skin[data-app='messenger'] .msg--me:not(.is-first) .msg__bubble {
+  border-top-right-radius: 5px;
+}
+
+.app-skin[data-app='messenger'] .msg--me:not(.is-last) .msg__bubble {
+  border-bottom-right-radius: 5px;
+}
+
+.app-skin[data-app='messenger'] .msg--me .msg__link {
+  color: #fff;
+}
+
+.app-skin[data-app='messenger'] .tstamp--time {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.app-skin[data-app='messenger'] .composer {
+  gap: 0.85rem;
+}
+
+.app-skin[data-app='messenger'] .lbar__title {
+  font-size: 1.6rem;
+}
+
+/* Notificaciones de Facebook */
+.app-skin[data-app='messenger'] .row.is-unread {
+  background: #e7f0ff;
+}
+
+.app-skin[data-app='messenger'] .row {
+  align-items: flex-start;
+}
+
+.app-skin[data-app='messenger'] .row__time {
+  font-size: 0.95rem;
+}
+
+.app-skin[data-app='messenger'] .row.is-unread .row__time {
+  color: #0866ff;
+}
+
+.app-skin[data-app='messenger'] .row__dot {
+  align-self: center;
+}
+
+/* Android: barra con sombra; iPhone: barra con línea fina */
+.app-skin[data-app='messenger'][data-os='android'] .cbar {
+  border-bottom: 0;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
+}
