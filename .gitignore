@@ -1,0 +1,11 @@
+node_modules/
+dist/
+RESPALDO/
+.claude/
+# Capturas con datos de personas reales y documento académico: no subir a un repositorio público.
+REFERENCIAS/
+.env
+.env.*
+*.zip
+*.log
+*.tmp

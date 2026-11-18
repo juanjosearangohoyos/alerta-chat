@@ -1,0 +1,17 @@
+{
+  "name": "alerta-chat",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ALERTA CHAT: simulación educativa de estafas por mensajería para adultos mayores (Ciberculturas, Javeriana Cali).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm test && vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check-story.js",
+    "test": "node scripts/check-story.js && node scripts/test-stories.js && node scripts/test-reader.js"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
