@@ -1,0 +1,30 @@
+/* Tokens de la capa ALERTA CHAT (pedagógica). Contraste de texto ≥ 7:1 sobre su fondo. */
+:root {
+  color-scheme: light;
+
+  --ac-page: #ece8df;
+  --ac-paper: #fffdf8;
+  --ac-surface: #ffffff;
+  --ac-ink: #16181d;
+  --ac-muted: #45474f;
+  --ac-line: #c9c3b6;
+  --ac-brand: #1d3d8f;
+  --ac-brand-hover: #152e6e;
+  --ac-brand-soft: #e6ecfa;
+  --ac-accent: #f2b705;
+  --ac-accent-soft: #fff3cd;
+  --ac-strip: #14213d;
+  --ac-focus: #f2b705;
+  --ac-radius: 16px;
+
+  --ac-font: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-ios: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', system-ui, sans-serif;
+  --font-android: Roboto, 'Google Sans', 'Noto Sans', 'Segoe UI', system-ui, sans-serif;
+
+  /* Tamaños mínimos acordados para el público mayor de 60 años */
+  --text-chat: 1.25rem; /* 20 px en burbujas */
+  --text-ui: 1.125rem; /* 18 px */
+  --text-small: 0.9375rem; /* 15 px: solo horas y sellos */
+
+  --device-w: 400px;
+}
